@@ -8,13 +8,13 @@ docker build -t c-builder:latest .
 
 ## Usage
 ```bash
-export cb="docker run --name builder --rm -it -w /app -v ${PWD}:/app c-builder:latest"
+alias cb="docker run --name builder --rm -p 3000:3000 -it -w /app -v ${PWD}:/app c-builder:latest"
 ```
 or
 ```bash
-$cb bash
+cb bash
 ```
 or 
 ```bash
-$cb make
+cb make
 ```

@@ -15,10 +15,32 @@ RUN echo "Installing required packages " \
             g++ \
             gcc \
             wget \
+            curl \
             libstdc++6 \
             libstdc++11 \
             build-essential \
             manpages-dev \
+            llvm \
+            clang-format \
+            clang-tidy \
+            clang-tools \
+            clang \
+            clangd \
+            libc++-dev \
+            libc++1 \
+            libc++abi-dev \
+            libc++abi1 \
+            libclang-dev \
+            libclang1 \
+            liblldb-dev \
+            libllvm-ocaml-dev \
+            libomp-dev \
+            libomp5 \
+            lld \
+            lldb \
+            llvm-dev \
+            llvm-runtime \
+            llvm python-clang \
             gnupg2 \
             lsb-release \
             apt-utils \
@@ -26,5 +48,3 @@ RUN echo "Installing required packages " \
       && apt-get autoremove --purge -y \
       && apt-get autoclean -y \
       && rm -rf /var/cache/apt/*
-
-# ENTRYPOINT [ "/usr/bin/g++-10" ]
